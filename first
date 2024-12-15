@@ -21,7 +21,8 @@ for q in questions:
         print("Correct answer...\n")
         score+=1
     else:
-        print("Incorrect answer...\nThe correct answer was",q[1],".","\n")
+        correct_answer=q[2][ord(q[1]) - ord('A')]
+        print(f"Incorrect answer...\nThe correct answer was {correct_answer}.\n")
+
         
 print(f"Your score is {score}/{len(questions)}.")
-
